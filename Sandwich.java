@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Sandwich {
    private ArrayList<String> toppings;
    private int numberOfToppings;
@@ -32,9 +34,11 @@ public class Sandwich {
    }
    // return list of ingredients
    public String ingredients() {
+      return "";
    }
    // return overview of sandwich
    public String sandwichInfo() {
+      return "";
    }
    // add bread on top and bottom
    public void addBread() {
