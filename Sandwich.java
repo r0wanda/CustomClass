@@ -26,6 +26,18 @@ public class Sandwich {
       this.calories = calories;
       this.protein = protein;
    }
+   // automatically initializes number of toppings & adds bread/wrap
+   public Sandwich(String name, ArrayList<String> toppings, double weight, int calories, double protein, boolean isWrap) {
+      this.name = name;
+      this.toppings = toppings;
+      this.numberOfToppings = toppings.size();
+      this.weight = weight;
+      this.calories = calories;
+      this.protein = protein;
+      if (isWrap) lettuceWrap();
+      else addBread();
+   }
+
    // adds topping to sandwich
    public void addTopping(String name, double weight, int calories, double protein) {
    }
